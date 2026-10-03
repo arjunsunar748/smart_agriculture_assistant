@@ -1,0 +1,693 @@
+/* ==========================================================================
+   SMART AGRICULTURE ASSISTANT - CLEAN MODERN AGRICULTURAL SAAS STYLESHEET
+   Simple + Modern + Agricultural + Professional + Responsive
+   Built with Bootstrap 5
+   ========================================================================== */
+
+:root {
+  --agri-dark: #1b4332;
+  --agri-primary: #2d6a4f;
+  --agri-medium: #40916c;
+  --agri-light: #52b788;
+  --agri-soft: #d8f3dc;
+  --agri-soft-bg: #f4f9f4;
+  --agri-bg: #f7faf8;
+  --agri-card-bg: #ffffff;
+  --agri-border: #e2ebe4;
+  --agri-border-subtle: #edf2ee;
+  --agri-text: #1b261e;
+  --agri-muted: #5c6b60;
+  --agri-warning: #e76f51;
+  --agri-danger: #d90429;
+  --agri-radius: 8px;
+  --agri-radius-sm: 6px;
+  --agri-radius-lg: 10px;
+  --agri-shadow-sm: 0 2px 6px rgba(27, 67, 50, 0.04);
+  --agri-shadow: 0 4px 12px rgba(27, 67, 50, 0.06);
+  --agri-shadow-hover: 0 8px 20px rgba(27, 67, 50, 0.1);
+}
+
+body {
+  background-color: var(--agri-bg);
+  color: var(--agri-text);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans Devanagari', sans-serif;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Base Shell */
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+
+/* ==========================================================================
+   NAVBAR (Clean, Modern, Simple)
+   ========================================================================== */
+.agri-navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--agri-border);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+  padding: 0.65rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+
+.agri-navbar .navbar-brand {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--agri-dark);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+.agri-navbar .nav-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #495057;
+  padding: 0.5rem 0.85rem !important;
+  border-radius: var(--agri-radius-sm);
+  transition: all 0.2s ease;
+}
+
+.agri-navbar .nav-link:hover {
+  color: var(--agri-primary);
+  background-color: var(--agri-soft-bg);
+}
+
+.agri-navbar .nav-link.active {
+  color: var(--agri-dark);
+  background-color: var(--agri-soft);
+  font-weight: 700;
+}
+
+.agri-navbar .dropdown-menu {
+  border: 1px solid var(--agri-border);
+  border-radius: var(--agri-radius);
+  box-shadow: var(--agri-shadow);
+  padding: 0.5rem;
+  font-size: 0.88rem;
+}
+
+.agri-navbar .dropdown-item {
+  font-weight: 500;
+  border-radius: var(--agri-radius-sm);
+  padding: 0.45rem 0.75rem;
+  color: var(--agri-text);
+}
+
+.agri-navbar .dropdown-item:hover {
+  background-color: var(--agri-soft-bg);
+  color: var(--agri-primary);
+}
+
+.agri-navbar .dropdown-item.active {
+  background-color: var(--agri-primary);
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   BUTTONS (Agricultural Green System)
+   ========================================================================== */
+.btn-agri {
+  background-color: var(--agri-primary);
+  border: 1px solid var(--agri-primary);
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: var(--agri-radius-sm);
+  padding: 0.5rem 1.25rem;
+  transition: all 0.25s ease;
+}
+
+.btn-agri:hover, .btn-agri:focus {
+  background-color: var(--agri-dark);
+  border-color: var(--agri-dark);
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(27, 67, 50, 0.15);
+}
+
+.btn-outline-agri {
+  background-color: transparent;
+  border: 1.5px solid var(--agri-primary);
+  color: var(--agri-primary);
+  font-weight: 600;
+  border-radius: var(--agri-radius-sm);
+  padding: 0.5rem 1.25rem;
+  transition: all 0.25s ease;
+}
+
+.btn-outline-agri:hover, .btn-outline-agri:focus {
+  background-color: var(--agri-primary);
+  border-color: var(--agri-primary);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.btn-soft-agri {
+  background-color: var(--agri-soft);
+  border: 1px solid transparent;
+  color: var(--agri-dark);
+  font-weight: 600;
+  border-radius: var(--agri-radius-sm);
+  transition: all 0.2s ease;
+}
+
+.btn-soft-agri:hover {
+  background-color: #b7e4c7;
+  color: var(--agri-dark);
+}
+
+/* ==========================================================================
+   CARDS & CONTAINERS
+   ========================================================================== */
+.agri-card {
+  background-color: var(--agri-card-bg);
+  border: 1px solid var(--agri-border);
+  border-radius: var(--agri-radius);
+  box-shadow: var(--agri-shadow-sm);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.agri-card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--agri-shadow-hover);
+  border-color: #b7e4c7;
+}
+
+.card-header-clean {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--agri-border-subtle);
+  padding: 0.85rem 1.25rem;
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.agri-hero {
+  background: linear-gradient(135deg, #f4f9f4 0%, #e8f5e9 100%);
+  border-bottom: 1px solid var(--agri-border);
+  padding: 3rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.agri-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background-color: #ffffff;
+  border: 1px solid var(--agri-border);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--agri-primary);
+  margin-bottom: 1rem;
+}
+
+.agri-hero-title {
+  font-size: 2.35rem;
+  font-weight: 800;
+  color: var(--agri-dark);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.agri-hero-subtitle {
+  font-size: 1.05rem;
+  color: var(--agri-muted);
+  max-width: 620px;
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.agri-hero-card {
+  background-color: #ffffff;
+  border: 1px solid var(--agri-border);
+  border-radius: var(--agri-radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--agri-shadow);
+}
+
+/* ==========================================================================
+   SUMMARY DASHBOARD METRICS (4 Clean Cards)
+   ========================================================================== */
+.metric-card-inner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.metric-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  flex-shrink: 0;
+}
+
+.metric-icon-box.green {
+  background-color: var(--agri-soft);
+  color: var(--agri-primary);
+}
+
+.metric-icon-box.blue {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+.metric-icon-box.amber {
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+.metric-icon-box.rose {
+  background-color: #fee2e2;
+  color: #e11d48;
+}
+
+.metric-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.metric-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--agri-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.15rem;
+}
+
+.metric-value {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--agri-dark);
+  line-height: 1.2;
+}
+
+.metric-desc {
+  font-size: 0.75rem;
+  color: var(--agri-muted);
+  margin-top: 0.15rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ==========================================================================
+   FORM STYLING
+   ========================================================================== */
+.form-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--agri-text);
+  margin-bottom: 0.35rem;
+}
+
+.form-control, .form-select {
+  border: 1px solid var(--agri-border);
+  border-radius: var(--agri-radius-sm);
+  padding: 0.5rem 0.75rem;
+  font-size: 0.88rem;
+  color: var(--agri-text);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--agri-medium);
+  box-shadow: 0 0 0 0.2rem rgba(64, 145, 108, 0.15);
+}
+
+/* ==========================================================================
+   RECOMMENDATION CARDS
+   ========================================================================== */
+.rec-crop-card {
+  border: 1px solid var(--agri-border);
+  border-radius: var(--agri-radius);
+  background-color: #ffffff;
+  padding: 1.25rem;
+  box-shadow: var(--agri-shadow-sm);
+  transition: all 0.25s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rec-crop-card:hover {
+  border-color: var(--agri-light);
+  box-shadow: var(--agri-shadow-hover);
+  transform: translateY(-2px);
+}
+
+.rec-crop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.rec-data-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.35rem 0;
+  border-bottom: 1px dashed var(--agri-border-subtle);
+  font-size: 0.82rem;
+}
+
+.rec-data-label {
+  color: var(--agri-muted);
+}
+
+.rec-data-val {
+  font-weight: 600;
+  color: var(--agri-text);
+}
+
+/* ==========================================================================
+   BADGES & PILLS
+   ========================================================================== */
+.badge-agri-low {
+  background-color: var(--agri-soft);
+  color: var(--agri-primary);
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.badge-agri-med {
+  background-color: #fef3c7;
+  color: #92400e;
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.badge-agri-high {
+  background-color: #fee2e2;
+  color: #991b1b;
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.badge-trend-up {
+  background-color: #ecfdf5;
+  color: #065f46;
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.badge-trend-down {
+  background-color: #fef2f2;
+  color: #991b1b;
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.badge-trend-stable {
+  background-color: #f3f4f6;
+  color: #4b5563;
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+/* ==========================================================================
+   HOW IT WORKS STEP CARDS
+   ========================================================================== */
+.step-card {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background-color: #ffffff;
+  border: 1px solid var(--agri-border);
+  border-radius: var(--agri-radius);
+  height: 100%;
+  transition: all 0.25s ease;
+}
+
+.step-card:hover {
+  border-color: var(--agri-light);
+  transform: translateY(-2px);
+  box-shadow: var(--agri-shadow);
+}
+
+.step-num-badge {
+  width: 40px;
+  height: 40px;
+  background-color: var(--agri-soft);
+  color: var(--agri-dark);
+  font-weight: 800;
+  font-size: 1.1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem auto;
+}
+
+/* ==========================================================================
+   AI ASSISTANT CHAT
+   ========================================================================== */
+.chat-window-clean {
+  background-color: #ffffff;
+  border: 1px solid var(--agri-border);
+  border-radius: var(--agri-radius);
+  box-shadow: var(--agri-shadow-sm);
+  display: flex;
+  flex-direction: column;
+  height: 520px;
+  overflow: hidden;
+}
+
+.chat-message-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.25rem;
+}
+
+.chat-msg-user {
+  background-color: var(--agri-primary);
+  color: #ffffff;
+  border-radius: 12px 12px 2px 12px;
+  padding: 0.75rem 1rem;
+  max-width: 80%;
+  margin-left: auto;
+  font-size: 0.88rem;
+  margin-bottom: 0.75rem;
+}
+
+.chat-msg-ai {
+  background-color: var(--agri-soft-bg);
+  border: 1px solid var(--agri-border);
+  color: var(--agri-text);
+  border-radius: 12px 12px 12px 2px;
+  padding: 0.85rem 1.15rem;
+  max-width: 85%;
+  margin-right: auto;
+  font-size: 0.88rem;
+  margin-bottom: 0.75rem;
+}
+
+.chat-data-used-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--agri-muted);
+  background-color: #ffffff;
+  border: 1px solid var(--agri-border);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  margin-right: 0.35rem;
+  margin-top: 0.4rem;
+}
+
+.quick-prompt-btn {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  border: 1px solid var(--agri-border);
+  background-color: #ffffff;
+  color: var(--agri-dark);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.quick-prompt-btn:hover {
+  background-color: var(--agri-soft);
+  border-color: var(--agri-light);
+  color: var(--agri-dark);
+}
+
+/* ==========================================================================
+   FOOTER (Simple, Professional, Light)
+   ========================================================================== */
+.agri-footer {
+  background-color: #ffffff;
+  border-top: 1px solid var(--agri-border);
+  padding: 2.5rem 0 1.5rem 0;
+  margin-top: 3rem;
+  font-size: 0.85rem;
+  color: var(--agri-muted);
+}
+
+.agri-footer-brand {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--agri-dark);
+}
+
+.agri-footer a {
+  color: var(--agri-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.agri-footer a:hover {
+  color: var(--agri-primary);
+}
+
+/* ==========================================================================
+   ANIMATIONS & TRANSITIONS (Subtle, 200-300ms)
+   ========================================================================== */
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.slide-up {
+  animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==========================================================================
+   RESPONSIVE OVERRIDES
+   320px, 375px, 425px, 576px, 768px, 992px, 1200px, 1400px
+   ========================================================================== */
+@media (max-width: 768px) {
+  .agri-hero {
+    padding: 2rem 0;
+  }
+  .agri-hero-title {
+    font-size: 1.75rem;
+  }
+  .agri-hero-subtitle {
+    font-size: 0.95rem;
+  }
+  .metric-card-inner {
+    gap: 0.75rem;
+  }
+  .metric-value {
+    font-size: 1.1rem;
+  }
+  .chat-msg-user, .chat-msg-ai {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .agri-hero-title {
+    font-size: 1.5rem;
+  }
+  .btn-agri, .btn-outline-agri {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .table {
+    font-size: 0.8rem;
+  }
+}
+
+/* Secondary Views Compatibility Wrapper */
+.view-content-wrapper {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+.page-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--agri-dark);
+}
+
+.page-subtitle {
+  font-size: 0.85rem;
+  color: var(--agri-muted);
+  margin-top: 0.25rem;
+}
+
+.filter-card {
+  background-color: #ffffff;
+  border: 1px solid var(--agri-border);
+  border-radius: var(--agri-radius);
+  padding: 1.25rem;
+  box-shadow: var(--agri-shadow-sm);
+  margin-bottom: 1.25rem;
+}
+
+.filter-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--agri-text);
+  margin-bottom: 0.35rem;
+  display: block;
+}
+
+.filter-input {
+  width: 100%;
+  border: 1px solid var(--agri-border);
+  border-radius: var(--agri-radius-sm);
+  padding: 0.45rem 0.65rem;
+  font-size: 0.85rem;
+  color: var(--agri-text);
+  background-color: #ffffff;
+}
+
+.filter-input:focus {
+  border-color: var(--agri-medium);
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(64, 145, 108, 0.15);
+}
+
+.badge-no-iot {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background-color: var(--agri-soft);
+  color: var(--agri-primary);
+  border: 1px solid #b7e4c7;
+  padding: 0.25rem 0.65rem;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
